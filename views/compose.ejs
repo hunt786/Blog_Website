@@ -1,0 +1,23 @@
+<%-include('partials/header') -%>
+<h1>Add Contents To Phoenix Webpage</h1>
+<form action="/compose" method="post">
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">TITLE</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="postTitle">
+            
+        </div>
+        <div class="form-floating">
+            <label for="floatingTextarea2">POST</label>
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px" name="postBody"></textarea>
+           
+        </div>
+        
+          <br>
+    <button type="submit" class="btn btn-primary">Publish</button>
+    
+        </form>
+        
+</form>
+<%- include('partials/footer') -%>
